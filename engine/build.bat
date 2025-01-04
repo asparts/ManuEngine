@@ -3,7 +3,7 @@ REM Build script for engine
 SetLocal EnableDelayedExpansion
 REM Get a list of all the .cpp files.
 SET cFilenames=
-FOR /R %%f in (*.cpp) do (
+FOR /R %%f in (*.c) do (
     SET cFilenames=!cFilenames! %%f
 )
 REM echo "Files:" %cFilenames%
